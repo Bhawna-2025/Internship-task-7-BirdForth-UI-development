@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BirdForth</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style type="text/tailwindcss">
+    @theme {
+        --font-source: "Source Sans 3", sans-serif;
+        --font-cormorant: "Cormorant Garamond", sans-serif;
+      }
+    </style>
+
+</head>
+
+<body>
+  <!-- Section 1 -->
+  <section id="nav" class="font-[600] mx-15 my-3 ">
+
+    <div class="flex justify-between items-center ">
+      <!-- left side -->
+      <div id="left" class="flex justify-center items-center gap-6">
+        <!-- social-icons -->
+        <div id="social-icons" class="flex justify-center items-center gap-2">
+          <a href="#" class="bg-[#A18E5A] h-7 w-7 rounded-full flex justify-center items-center">
+            <img src="assets/InstaIcon.png" alt="" class="h-[60%]">
+          </a>
+          <a href="#" class="bg-[#A18E5A] h-7 w-7 rounded-full flex justify-center items-center">
+            <img src="assets/FaceBookIcon.png" alt="" class="h-[50%]">
+          </a>
+        </div>
+        <!-- telephone -->
+        <div class="flex justify-center items-center gap-2">
+          <a href="">
+            <img src="assets/TelephoneIcon.png" alt="">
+          </a>
+          <p class="font-[600]">+44 (0)1845 421182</p>
+        </div>
+      </div>
+
+      <!-- right side -->
+      <div id="right" class="flex justify-center items-center gap-4">
+        <div class="h-12">
+          <img src="assets/Googlereview.png" alt="" class="h-[100%]">
+        </div>
+        <button class="bg-[#3F5C47] p-2 rounded-sm text-white uppercase font-[700] text-[14px]">
+          Book A Viewing
+        </button>
+        <button class="bg-[#A18E5A] p-2 rounded-sm text-white uppercase font-[700] text-[14px]">
+          Book A Stay
+        </button>
+        <div id="lang" class="flex justify-center items-center gap-2">
+          <div class="h-[19px] w-[19px] rounded-full overflow-hidden">
+            <img src="assets/UkIcon.png" alt="" class="h-[100%] w-[100%] object-cover ">
+          </div>
+          <div class="flex justify-center items-center">
+            <p>English</p>
+            <button class="h-[16px]">
+              <img src="assets/Dropdownicon.png" alt="" class="rotate-180 h-[100%]">
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- seperation -->
+    <div class="h-[1.2px] w-full bg-gray-200 mt-1"></div>
+
+    <!-- Navigation -->
+    <div class="flex justify-between items-center my-6 uppercase mx-4">
+      <div class="h-15">
+        <img src="assets/Logo.png" alt="" class="h-[100%]">
+      </div>
+      <div class="flex justify-center items-center gap-12">
+        <a href="#" class="flex justify-center items-center gap-1">
+          <p>Our Cottages</p>
+          <button class="h-[16px]">
+            <img src="assets/Dropdownicon.png" alt="" class="rotate-180 h-[100%]">
+          </button>
+        </a>
+        <a href="#" class="flex justify-center items-center gap-1">
+          <p>Availability & Book</p>
+        </a>
+        <a href="#" class="flex justify-center items-center gap-1">
+          <p>Your Stay</p>
+          <button class="h-[16px]">
+            <img src="assets/Dropdownicon.png" alt="" class="rotate-180 h-[100%]">
+          </button>
+        </a>
+        <a href="#" class="flex justify-center items-center gap-1">
+          <p>Weddings</p>
+          <button class="h-[16px]">
+            <img src="assets/Dropdownicon.png" alt="" class="rotate-180 h-[100%]">
+          </button>
+        </a>
+        <a href="#" class="flex justify-center items-center gap-1">
+          <p>Meetings and Events</p>
+        </a>
+        <a href="#" class="flex justify-center items-center gap-1">
+          <p>Blog</p>
+        </a>
+        <a href="#" class="flex justify-center items-center gap-1">
+          <p>Contact</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section 2 -->
+  <section class="mx-15 my-5 text-[#fff] ">
+    <div class="h-[700px] rounded-3xl overflow-hidden bg-[url('assets/bannerImage.jpg')] bg-cover bg-center relative">
+      <div class="absolute bottom-10 left-13 z-10">
+        <div class="flex gap-3">
+          <p class="font-cormorant font-[700] text-[35px]">Birdforth Hall</p>
+          <div class="h-[1px] w-[100px] bg-white mt-6"></div>
+        </div>
+        <p class="font-[600] text-[18px]">North Yorkshire</p>
+      </div>
+      <div class="absolute h-40 w-full bottom-0 bg-gradient-to-t from-black to-transparent"></div>
+    </div>
+  </section>
+
+  <!-- section 3 -->
+   <section class="mx-15 my-16 text-[#5B5757]">
+    <div class="grid grid-cols-2 gap-18">
+      <!-- left grid -->
+      <div class="flex flex-col gap-6">
+
+        <div class="flex gap-5">
+          <p class="tracking-[0.4em] text-[18px] font-[500]">THE FORGE • BIRDFORTH HALL</p>
+          <div class="h-[1.5px] w-30 bg-[#5B5757] mt-3"></div>
+        </div>
+
+        <p class="text-[58px] text-[#A18E5A] font-cormorant font-[600] leading-tight">Birdforth Hall Holiday Cottages and Wedding Venue near York</p>
+
+        <div class="flex gap-3">
+          <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
+          <img src="assets/greyhouseicon.png" alt="" class="h-10">
+          <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
+        </div>
+
+        <div class="text-[#000000] flex flex-col gap-3 text-[18px] font-[400] tracking-[5%]">
+          <p>A peaceful countryside place to relax and comes together near York, Thirsk & Easingwold.</p>
+
+          <p>
+            At Birdforth Hall, first impressions matter. From the moment you arrive, surrounded by open parkland views, converted barns, friendly animals and quiet North Yorkshire setting are here to help you feel that you have made the right choice. Whether you are planning a wedding, a family celebration, a countryside break or a group stay, Birdforth Hall gives you space to slow down, enjoy good company and make proper memories together.
+          </p>
+
+          <p>
+            Your wedding begins the moment you arrive. With onsite accommodation, open countryside views and a relaxed North Yorkshire setting, family and friends can gather the night before, settle into the cottages, enjoy food, drinks, the hot tubs, pool and our Pizza Shack.
+          </p>
+
+          <p>
+            You and your family can start making memories before the big day itself. It is a warm, easy and personal way to bring everyone together, giving your wedding more time, more meaning and a proper sense of celebration.</p>
+          </p>
+
+        </div>
+      </div>
+
+      <!-- right grid -->
+       <div class="relative">
+        <div class="rounded-2xl overflow-hidden">
+          <img src="assets/weddignVenue.jpg" alt="" class="rounded-2xl">
+        </div>
+        <!-- overlay-Images -->
+        <div class="absolute bottom-50 right-0 h-60 w-60 rotate-5 border-5 rounded-lg border-white">
+          <img src="assets/weddingOverlay2.jpg" alt="" class="h-[100%] w-[100%] object-cover rounded-lg">
+        </div>
+        <div class="absolute top-20 right-0 h-80 w-80 rotate-5 border-5 rounded-lg border-white">
+          <img src="assets/weddingOverlay3.jpg" alt="" class="h-[100%] w-[100%] object-cover rounded-lg">
+        </div>
+       </div>
+    </div>
+   </section>
+
+   <!-- section 4 -->
+</body>
+
+</html>
