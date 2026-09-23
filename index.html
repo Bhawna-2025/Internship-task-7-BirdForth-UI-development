@@ -18,6 +18,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <style type="text/tailwindcss">
     @theme {
         --font-source: "Source Sans 3", sans-serif;
@@ -203,7 +206,36 @@
 
       <!-- left grid -->
       <div class="my-18 rounded-2xl overflow-hidden h-[689px] w-[575px]">
-        <img src="assets/weddignVenue.jpg" alt="" class="rounded-2xl h-[100%] w-[100%] object-cover">
+        <div class="swiper mySwiper h-full w-full">
+          <div class="swiper-wrapper h-full w-full">
+
+            <div class="swiper-slide h-full w-full">
+              <img src="assets/weddignVenue.jpg" alt="Wedding Venue" class="rounded-2xl h-full w-full object-cover">
+            </div>
+
+            <div class="swiper-slide h-full w-full">
+              <img src="assets/weddingOverlay2.jpg" alt="Image 2" class="rounded-2xl h-full w-full object-cover">
+            </div>
+
+            <div class="swiper-slide h-full w-full">
+              <img src="assets/weddingOverlay3.jpg" alt="Image 3" class="rounded-2xl h-full w-full object-cover">
+            </div>
+            <div class="swiper-slide h-full w-full">
+              <img src="assets/slider1.jpg" alt="Image 4" class="rounded-2xl h-full w-full object-cover">
+            </div>
+            <div class="swiper-slide h-full w-full">
+              <img src="assets/slider2.jpg" alt="Image 5" class="rounded-2xl h-full w-full object-cover">
+            </div>
+
+          </div>
+
+          <!-- Navigation buttons -->
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+
+          <!-- Pagination dots -->
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
       </div>
 
       <!-- right grid -->
@@ -216,11 +248,14 @@
         <p class="text-[45px] text-[#A18E5A] font-cormorant font-[600] leading-tight">
           Luxury holiday cottages<br>for families and groups
         </p>
-        
-        <p  class="text-[#000000] flex flex-col gap-3 text-[18px] font-[400] tracking-[5%]">
-          Our four dog-friendly holiday cottages are designed for groups who want to spend proper time together without giving up comfort or personal space. Across Mill House, The Granary, The Stables and The Byre, there is accommodation for up to 43 guests, with generous kitchens, sociable living areas and bedrooms suited to families and mixed-age groups.
+
+        <p class="text-[#000000] flex flex-col gap-3 text-[18px] font-[400] tracking-[5%]">
+          Our four dog-friendly holiday cottages are designed for groups who want to spend proper time together without
+          giving up comfort or personal space. Across Mill House, The Granary, The Stables and The Byre, there is
+          accommodation for up to 43 guests, with generous kitchens, sociable living areas and bedrooms suited to
+          families and mixed-age groups.
         </p>
-        
+
         <div class="grid grid-cols-4 tracking-[5%] text-[#A18E5A] italic">
 
           <div class="flex gap-5 px-5 text-center">
@@ -246,15 +281,18 @@
             </div>
             <div class="h-20 w-[1px] bg-[#A18E5A]"></div>
           </div>
-          
+
           <div class="flex flex-col items-center gap-1 px-5 text-center">
             <img src="assets/DogfootIcon.png" alt="" class="h-[33px] w-[35px]">
             <p>Dog-friendly cottages</p>
           </div>
         </div>
 
-        <p  class="text-[#000000] flex flex-col gap-3 text-[18px] font-[400] tracking-[5%]">
-         Every cottage has its own private garden and hot tub. Each cottage has exclusive use of the heated indoor pool on a rota basis. We also have a pool table, table tennis and DIY Pizza Shack, for your use during your stay. There is ample onsite parking, superfast Wi-Fi and thoughtful family equipment including travel cots, highchairs, a baby bath and changing mats.
+        <p class="text-[#000000] flex flex-col gap-3 text-[18px] font-[400] tracking-[5%]">
+          Every cottage has its own private garden and hot tub. Each cottage has exclusive use of the heated indoor pool
+          on a rota basis. We also have a pool table, table tennis and DIY Pizza Shack, for your use during your stay.
+          There is ample onsite parking, superfast Wi-Fi and thoughtful family equipment including travel cots,
+          highchairs, a baby bath and changing mats.
         </p>
 
         <div class="bg-[#A18E5A2B] px-8 py-6 flex justify-center items-center rounded-lg gap-5">
@@ -262,11 +300,14 @@
 
           <div class="h-30 w-[3px] bg-black"></div>
 
-          <p class="text-[#000000] flex flex-col gap-3 text-[18px] font-[400] tracking-[5%]">Choose a detached cottage with long-horn cattle looking over the gate, a single-storey stay with parking beside the door, or two adjoining properties that can sleep up to 22 guests together. However your group is made up, there is space to cook, eat, celebrate and relax at your own pace.</p>
+          <p class="text-[#000000] flex flex-col gap-3 text-[18px] font-[400] tracking-[5%]">Choose a detached cottage
+            with long-horn cattle looking over the gate, a single-storey stay with parking beside the door, or two
+            adjoining properties that can sleep up to 22 guests together. However your group is made up, there is space
+            to cook, eat, celebrate and relax at your own pace.</p>
         </div>
 
         <button class="bg-[#A18E5A] w-fit text-white px-4 py-2 rounded-sm flex items-center jutify-center gap-5">
-          <p class="font-[700]">Search & Book</p>
+          <p class="font-[700] text-[14px]">Search & Book</p>
           <img src="assets/searchbuttonArrow.png" alt="">
         </button>
 
@@ -274,6 +315,83 @@
 
     </div>
   </section>
+
+  <!-- section 5 -->
+  <section class="mx-30 my-16">
+    <!-- top heading -->
+    <div class="mb-10">
+      <div class="flex gap-5 mb-10">
+        <p class="tracking-[0.4em] text-[18px] font-[500] text-[#5B5757]">THE FORGE • BIRDFORTH HALL</p>
+        <div class="h-[1.5px] w-30 bg-[#5B5757] mt-3"></div>
+      </div>
+      <p class="text-[45px] text-[#A18E5A] font-cormorant font-[600] leading-tight">An Exclusive-Use Barn Wedding<br>
+        Venue in North Yorkshire</p>
+    </div>
+    <!-- grid section -->
+    <div class="grid grid-cols-[70%_31%]">
+      <!-- left grid -->
+      <div class="h-[830px] w-[845px] rounded-2xl overflow-hidden">
+        <img src="assets/section5Banner.png" alt="" class="h-[100%] w-[100%] object-cover">
+      </div>
+
+      <!-- right grid  -->
+      <div class="text-[#000000] flex flex-col gap-12 text-[18px] font-[400] tracking-[5%]">
+        <p>For weddings, The Forge at Birdforth Hall offers an exclusive-use barn venue with a relaxed countryside feel.
+          Originally a working blacksmith's forge, the space has been carefully brought back to life as a characterful
+          wedding venue with natural light, rustic details and room to make the day your own.</p>
+
+        <div class="flex gap-3">
+          <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
+          <img src="assets/greyhouseicon.png" alt="" class="h-10">
+          <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
+        </div>
+
+        <p>Couples can choose from indoor and outdoor ceremony options, a celebration in the barn, drinks outside on the
+          lawn, or a more relaxed reception in the Mediterranean Terrace Room, where floor-to-ceiling glass doors look
+          out towards the gardens, outdoor ceremony spaces, mature trees and surrounding fields.</p>
+
+        <p>Your wedding should feel like you, not like a fixed formula.</p>
+
+        <p>
+          That is why Birdforth Hall is built around flexibility, exclusive use and a simple promise: <span
+            class="font-semibold">your wedding, your way</span>
+        </p>
+
+        <button class="bg-[#A18E5A] w-fit text-white px-4 py-2 rounded-sm flex items-center jutify-center gap-5">
+          <p class="font-[600] text-[14px]">Book a Private Viewing</p>
+          <img src="assets/searchbuttonArrow.png" alt="">
+        </button>
+
+      </div>
+    </div>
+
+    <div class="text-center flex flex-col justify-center items-center mt-25 gap-5">
+      <p class="text-[45px] text-[#3F5C47] font-cormorant font-[600] leading-tight">A Countryside Setting Within Easy
+        Reach of York</p>
+      <div class="flex gap-3">
+        <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
+        <img src="assets/greyhouseicon.png" alt="" class="h-10">
+        <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
+      </div>
+      <div class="text-[#000000] flex flex-col gap-3 text-[18px] font-[400] tracking-[5%]">
+        <p >Birdforth Hall is around 20 minutes north of York, outside Easingwold and on the way to Thirsk. The rural
+          setting feels calm and private, while road and rail connections make it practical for guests travelling from
+          across Yorkshire and farther afield.</p>
+  
+         <p>From here, you can explore York, Thirsk and Herriot Country, plan days out across the North York Moors and
+          Yorkshire Dales, or simply stay close to home and enjoy the gardens, animals and facilities onsite. Our
+          long-horn cattle graze in the fields, horses like Revel are part of daily life, and Bella the pig is often the
+          guest favourite.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
