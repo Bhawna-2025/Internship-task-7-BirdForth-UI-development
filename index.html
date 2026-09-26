@@ -35,14 +35,14 @@
 
 <body>
   <!-- Section 1 -->
-  <section id="nav" class="font-[600] mx-15 my-3 ">
+  <section id="nav" class="font-[600] md:mx-15 mx-5 my-3 max-w-full ">
 
     <div class="flex justify-between items-center ">
       <!-- left side -->
-      <div id="left" class="flex justify-center items-center gap-6">
+      <div id="left" class="flex justify-center items-center md:gap-6 gap-3">
         <!-- social-icons -->
         <div id="social-icons" class="flex justify-center items-center gap-2">
-          <a href="#" class="bg-[#A18E5A] h-7 w-7 rounded-full flex justify-center items-center">
+          <a href="#" class="bg-[#A18E5A] h-7  w-7  rounded-full flex justify-center items-center">
             <img src="assets/InstaIcon.png" alt="" class="h-[60%]">
           </a>
           <a href="#" class="bg-[#A18E5A] h-7 w-7 rounded-full flex justify-center items-center">
@@ -52,21 +52,21 @@
         <!-- telephone -->
         <div class="flex justify-center items-center gap-2">
           <a href="">
-            <img src="assets/TelephoneIcon.png" alt="">
+            <img src="assets/TelephoneIcon.png" alt="" class="md:h-4 h-5">
           </a>
-          <p class="font-[600]">+44 (0)1845 421182</p>
+          <p class="font-[600] md:flex hidden">+44 (0)1845 421182</p>
         </div>
       </div>
 
       <!-- right side -->
       <div id="right" class="flex justify-center items-center gap-4">
-        <div class="h-12">
-          <img src="assets/Googlereview.png" alt="" class="h-[100%]">
+        <div class="md:h-12 ">
+          <img src="assets/Googlereview.png  md:flex hidden" alt="" class="h-[100%]">
         </div>
-        <a href="#" class="bg-[#3F5C47] p-2 rounded-sm text-white uppercase font-[700] text-[14px] inline-block">
+        <a href="#" class="  bg-[#3F5C47] p-2 rounded-sm text-white uppercase font-[700] text-[14px] md:inline-block hidden">
           Book A Viewing
         </a>
-        <a href="#" class="bg-[#A18E5A] p-2 rounded-sm text-white uppercase font-[700] text-[14px] inline-block">
+        <a href="#" class="bg-[#A18E5A] p-2 rounded-sm text-white uppercase font-[700] text-[14px] md:inline-block hidden">
           Book A Stay
         </a>
         <div id="lang" class="flex justify-center items-center gap-2">
@@ -88,11 +88,11 @@
     <div class="h-[1.2px] w-full bg-gray-200 mt-1"></div>
 
     <!-- Navigation -->
-    <div class="flex justify-between items-center my-6 uppercase mx-4">
-      <div class="h-15">
+    <div class="flex justify-between items-center md:my-6 my-4 uppercase md:mx-4">
+      <div class="md:h-15 h-10">
         <img src="assets/Logo.png" alt="" class="h-[100%]">
       </div>
-      <div class="flex justify-center items-center gap-12">
+      <div class="md:flex justify-center items-center gap-12 hidden">
         <a href="#" class="flex justify-center items-center gap-1">
           <p>Our Cottages</p>
           <span class="h-[16px] inline-flex items-center">
@@ -124,35 +124,38 @@
           <p>Contact</p>
         </a>
       </div>
+      <div class="md:hidden block-inline">
+        <i class="ri-menu-line text-[#5B5757] mr-3 text-[18px]"></i>
+      </div>
     </div>
   </section>
 
   <!-- section 2 -->
-  <section class="mx-15 my-5 text-[#fff] ">
-    <div class="h-[700px] rounded-3xl overflow-hidden bg-[url('assets/bannerImage.jpg')] bg-cover bg-center relative">
-      <div class="absolute bottom-10 left-13 z-10">
+  <section class="md:mx-15 mx-5 my-5 text-[#fff] ">
+    <div class="md:h-[700px] h-[400px] md:rounded-3xl rounded-xl overflow-hidden bg-[url('assets/bannerImage.jpg')] bg-cover bg-center relative">
+      <div class="absolute bottom-10 md:left-13 left-5 z-10">
         <div class="flex gap-3">
-          <p class="font-cormorant font-[700] text-[35px]">Birdforth Hall</p>
-          <div class="h-[1px] w-[100px] bg-white mt-6"></div>
+          <p class="font-cormorant font-[700] md:text-[35px] text-[25px]">Birdforth Hall</p>
+          <div class="h-[1px] md:w-[100px] w-[50px] bg-white md:mt-6 mt-4"></div>
         </div>
-        <p class="font-[600] text-[18px]">North Yorkshire</p>
+        <p class="md:font-[600] md:text-[18px]">North Yorkshire</p>
       </div>
-      <div class="absolute h-40 w-full bottom-0 bg-gradient-to-t from-black to-transparent"></div>
+      <div class="absolute h-40  w-full bottom-0 bg-gradient-to-t from-black/70 to-transparent"></div>
     </div>
   </section>
 
   <!-- section 3 -->
-  <section class="mx-15 my-16 text-[#5B5757]">
-    <div class="grid grid-cols-2 gap-18">
+  <section class="md:mx-15 mx-5 my-16 text-[#5B5757]">
+    <div class="grid md:grid-cols-2 grid-col-1 md:gap-18 gap-5">
       <!-- left grid -->
       <div class="flex flex-col gap-6">
 
-        <div class="flex gap-5">
-          <p class="tracking-[0.4em] text-[18px] font-[500]">THE FORGE • BIRDFORTH HALL</p>
-          <div class="h-[1.5px] w-30 bg-[#5B5757] mt-3"></div>
+        <div class="flex md:gap-5 gap-2">
+          <p class="md:tracking-[0.4em] tracking-[3px] md:text-[18px] font-[500] text-[#5B5757]">THE FORGE • BIRDFORTH HALL</p>
+          <div class="h-[1.5px]  md:w-30 w-10 bg-[#5B5757] mt-3"></div>
         </div>
 
-        <p class="text-[58px] text-[#A18E5A] font-cormorant font-[600] leading-tight">Birdforth Hall Holiday Cottages
+        <p class="md:text-[58px] text-[25px] text-[#A18E5A] font-cormorant font-[600] leading-tight">Birdforth Hall Holiday Cottages
           and Wedding Venue near York</p>
 
         <div class="flex gap-3">
@@ -161,7 +164,7 @@
           <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
         </div>
 
-        <div class="text-[#000000] flex flex-col gap-3 text-[18px] font-[400] tracking-[5%]">
+        <div class="text-[#000000] flex flex-col gap-3 md:text-[18px] font-[400] tracking-[5%]">
           <p>A peaceful countryside place to relax and comes together near York, Thirsk & Easingwold.</p>
 
           <p>
@@ -193,10 +196,10 @@
           <img src="assets/weddignVenue.jpg" alt="" class="rounded-2xl">
         </div>
         <!-- overlay-Images -->
-        <div class="absolute bottom-50 right-0 h-60 w-60 rotate-5 border-5 rounded-lg border-white">
+        <div class="absolute md:bottom-50 bottom-35 md:right-0 -right-5 md:h-60 h-30 md:w-60 w-30 rotate-5 md:border-5 border-2 rounded-lg border-white">
           <img src="assets/weddingOverlay2.jpg" alt="" class="h-[100%] w-[100%] object-cover rounded-lg">
         </div>
-        <div class="absolute top-20 right-0 h-80 w-80 rotate-5 border-5 rounded-lg border-white">
+        <div class="absolute md:top-20 top-10 md:right-0 -right-5 md:h-80 h-40 md:w-80 w-40 rotate-5 md:border-5 border-2 rounded-lg border-white">
           <img src="assets/weddingOverlay3.jpg" alt="" class="h-[100%] w-[100%] object-cover rounded-lg">
         </div>
       </div>
@@ -204,30 +207,30 @@
   </section>
 
   <!-- section 4 -->
-  <section class="bg-[#F7F3EA] px-15 py-15">
-    <div class="grid grid-cols-[44%_55%]">
+  <section class="bg-[#F7F3EA] md:px-15 px-5 md:py-15 py-10">
+    <div class="grid md:grid-cols-[44%_55%]">
 
       <!-- left grid -->
-      <div class="my-18 rounded-2xl overflow-hidden h-[689px] w-[575px]">
+      <div class="md:my-18 my-5 md:rounded-2xl rounded-xl overflow-hidden md:h-[689px] md:w-[575px] order-2 md:order-1">
         <div class="swiper mySwiper h-full w-full">
           <div class="swiper-wrapper h-full w-full">
 
             <div class="swiper-slide h-full w-full">
-              <img src="assets/weddignVenue.jpg" alt="Wedding Venue" class="rounded-2xl h-full w-full object-cover">
+              <img src="assets/weddignVenue.jpg" alt="Wedding Venue" class="md:rounded-2xl h-full w-full object-cover">
             </div>
 
             <div class="swiper-slide h-full w-full">
-              <img src="assets/weddingOverlay2.jpg" alt="Image 2" class="rounded-2xl h-full w-full object-cover">
+              <img src="assets/weddingOverlay2.jpg" alt="Image 2" class="md:rounded-2xl h-full w-full object-cover">
             </div>
 
             <div class="swiper-slide h-full w-full">
-              <img src="assets/weddingOverlay3.jpg" alt="Image 3" class="rounded-2xl h-full w-full object-cover">
+              <img src="assets/weddingOverlay3.jpg" alt="Image 3" class="md:rounded-2xl h-full w-full object-cover">
             </div>
             <div class="swiper-slide h-full w-full">
-              <img src="assets/slider1.jpg" alt="Image 4" class="rounded-2xl h-full w-full object-cover">
+              <img src="assets/slider1.jpg" alt="Image 4" class="md:rounded-2xl h-full w-full object-cover">
             </div>
             <div class="swiper-slide h-full w-full">
-              <img src="assets/slider2.jpg" alt="Image 5" class="rounded-2xl h-full w-full object-cover">
+              <img src="assets/slider2.jpg" alt="Image 5" class="md:rounded-2xl h-full w-full object-cover">
             </div>
 
           </div>
@@ -242,17 +245,17 @@
       </div>
 
       <!-- right grid -->
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-5 order-1 md:order-2">
         <div class="flex gap-5">
-          <p class="tracking-[0.4em] text-[18px] font-[500] text-[#5B5757]">STAY WITH US</p>
+          <p class="md:tracking-[0.4em] tracking-[3px] md:text-[18px] font-[500] text-[#5B5757]">STAY WITH US</p>
           <div class="h-[1.5px] w-30 bg-[#5B5757] mt-3"></div>
         </div>
 
-        <p class="text-[45px] text-[#A18E5A] font-cormorant font-[600] leading-tight">
+        <p class="md:text-[45px] text-[30px] text-[#A18E5A] font-cormorant font-[600] leading-tight">
           Luxury holiday cottages<br>for families and groups
         </p>
 
-        <p class="text-[#000000] flex flex-col gap-3 text-[18px] font-[400] tracking-[5%]">
+        <p class="text-[#000000] flex flex-col gap-3 md:text-[18px] font-[400] tracking-[5%]">
           Our four dog-friendly holiday cottages are designed for groups who want to spend proper time together without
           giving up comfort or personal space. Across Mill House, The Granary, The Stables and The Byre, there is
           accommodation for up to 43 guests, with generous kitchens, sociable living areas and bedrooms suited to
@@ -261,49 +264,49 @@
 
         <div class="grid grid-cols-4 tracking-[5%] text-[#A18E5A] italic">
 
-          <div class="flex gap-5 px-5 text-center">
+          <div class="flex md:gap-5 md:px-5 text-center">
             <div class="flex flex-col items-center gap-1">
               <img src="assets/guesticon.png" alt="" class="h-[33px] w-[35px]">
-              <p>Sleeps up to 43 guests</p>
+              <p class="md:text-[16px] text-[14px]">Sleeps up to 43 guests</p>
             </div>
             <div class="h-20 w-[1px] bg-[#A18E5A]"></div>
           </div>
 
-          <div class="flex gap-5 px-5 text-center">
+          <div class="flex md:gap-5 md:px-5 text-center">
             <div class="flex flex-col items-center gap-1">
               <img src="assets/kitchenIcon.png" alt="" class="h-[33px] w-[35px]">
-              <p>Generous kitchens</p>
+              <p class="md:text-[16px] text-[14px]">Generous kitchens</p>
             </div>
             <div class="h-20 w-[1px] bg-[#A18E5A]"></div>
           </div>
 
-          <div class="flex gap-5 px-5 text-center">
+          <div class="flex md:gap-5 md:px-5 text-center">
             <div class="flex flex-col items-center gap-1">
               <img src="assets/livingAreaIcon.png" alt="" class="h-[33px] w-[35px]">
-              <p>Sociable living areas</p>
+              <p class="md:text-[16px] text-[14px]">Sociable living areas</p>
             </div>
             <div class="h-20 w-[1px] bg-[#A18E5A]"></div>
           </div>
 
-          <div class="flex flex-col items-center gap-1 px-5 text-center">
+          <div class="flex flex-col items-center gap-1 md:px-5 text-center">
             <img src="assets/DogfootIcon.png" alt="" class="h-[33px] w-[35px]">
-            <p>Dog-friendly cottages</p>
+            <p class="md:text-[16px] text-[14px]">Dog-friendly cottages</p>
           </div>
         </div>
 
-        <p class="text-[#000000] flex flex-col gap-3 text-[18px] font-[400] tracking-[5%]">
+        <p class="text-[#000000] flex flex-col gap-3 md:text-[18px] font-[400] tracking-[5%]">
           Every cottage has its own private garden and hot tub. Each cottage has exclusive use of the heated indoor pool
           on a rota basis. We also have a pool table, table tennis and DIY Pizza Shack, for your use during your stay.
           There is ample onsite parking, superfast Wi-Fi and thoughtful family equipment including travel cots,
           highchairs, a baby bath and changing mats.
         </p>
 
-        <div class="bg-[#A18E5A2B] px-8 py-6 flex justify-center items-center rounded-lg gap-5">
+        <div class="bg-[#A18E5A2B] px-8 py-6 flex md:flex-row flex-col justify-center items-center rounded-lg gap-5">
           <img src="assets/houseIcon.png" alt="">
 
-          <div class="h-30 w-[3px] bg-black"></div>
+          <div class="md:h-30 h-[1px] md:w-[3px] w-30 bg-black"></div>
 
-          <p class="text-[#000000] flex flex-col gap-3 text-[18px] font-[400] tracking-[5%]">Choose a detached cottage
+          <p class="text-[#000000] flex flex-col gap-3 md:text-[18px] font-[400] tracking-[5%]">Choose a detached cottage
             with long-horn cattle looking over the gate, a single-storey stay with parking beside the door, or two
             adjoining properties that can sleep up to 22 guests together. However your group is made up, there is space
             to cook, eat, celebrate and relax at your own pace.</p>
@@ -320,25 +323,25 @@
   </section>
 
   <!-- section 5 -->
-  <section class="mx-30 my-16">
+  <section class="md:mx-30 mx-5 md:my-16 my-10">
     <!-- top heading -->
-    <div class="mb-10">
-      <div class="flex gap-5 mb-10">
-        <p class="tracking-[0.4em] text-[18px] font-[500] text-[#5B5757]">THE FORGE • BIRDFORTH HALL</p>
-        <div class="h-[1.5px] w-30 bg-[#5B5757] mt-3"></div>
+    <div class="md:mb-10 mb-5">
+      <div class="flex md:gap-5 gap-2 md:mb-10 mb-4">
+        <p class="md:tracking-[0.4em] tracking-[3px] md:text-[18px] font-[500] text-[#5B5757]">THE FORGE • BIRDFORTH HALL</p>
+        <div class="h-[1.5px] md:w-30 w-10 bg-[#5B5757] mt-3"></div>
       </div>
-      <p class="text-[45px] text-[#A18E5A] font-cormorant font-[600] leading-tight">An Exclusive-Use Barn Wedding<br>
+      <p class="md:text-[45px] text-[25px] text-[#A18E5A] font-cormorant font-[600] leading-tight">An Exclusive-Use Barn Wedding<br>
         Venue in North Yorkshire</p>
     </div>
     <!-- grid section -->
-    <div class="grid grid-cols-[70%_31%]">
+    <div class="grid md:grid-cols-[70%_31%] md:gap-0 gap-5">
       <!-- left grid -->
-      <div class="h-[830px] w-[845px] rounded-2xl overflow-hidden">
+      <div class="md:h-[830px] h-70 md:w-[845px]  md:rounded-2xl rounded-xl overflow-hidden">
         <img src="assets/section5Banner.png" alt="" class="h-[100%] w-[100%] object-cover">
       </div>
 
       <!-- right grid  -->
-      <div class="text-[#000000] flex flex-col gap-12 text-[18px] font-[400] tracking-[5%]">
+      <div class="text-[#000000] flex flex-col md:gap-12 gap-4 md:text-[18px] font-[400] tracking-[5%]">
         <p>For weddings, The Forge at Birdforth Hall offers an exclusive-use barn venue with a relaxed countryside feel.
           Originally a working blacksmith's forge, the space has been carefully brought back to life as a characterful
           wedding venue with natural light, rustic details and room to make the day your own.</p>
@@ -368,15 +371,15 @@
       </div>
     </div>
 
-    <div class="text-center flex flex-col justify-center items-center mt-25 gap-5">
-      <p class="text-[45px] text-[#3F5C47] font-cormorant font-[600] leading-tight">A Countryside Setting Within Easy
+    <div class="text-center flex flex-col justify-center items-center md:mt-25 mt-8 gap-5">
+      <p class="md:text-[45px] text-[25px] text-[#3F5C47] font-cormorant font-[600] leading-tight">A Countryside Setting Within Easy
         Reach of York</p>
       <div class="flex gap-3">
         <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
         <img src="assets/greyhouseicon.png" alt="" class="h-10">
         <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
       </div>
-      <div class="text-[#000000] flex flex-col gap-3 text-[18px] font-[400] tracking-[5%]">
+      <div class="text-[#000000] flex flex-col gap-3 md:text-[18px] font-[400] tracking-[5%]">
         <p>Birdforth Hall is around 20 minutes north of York, outside Easingwold and on the way to Thirsk. The rural
           setting feels calm and private, while road and rail connections make it practical for guests travelling from
           across Yorkshire and farther afield.</p>
@@ -392,33 +395,33 @@
   </section>
 
   <!-- section 6 -->
-  <section class="bg-[#F7F3EA] flex justify-center item-center py-15 relative">
+  <section class="bg-[#F7F3EA] flex justify-center item-center md:py-15 py-5 relative">
     <div class="absolute -left-10 bottom-8 opacity-30">
       <img src="/assets/section6bgImage.png" alt="" class="h-[356px] -scale-x-100">
     </div>
 
-    <div class=" px-30 py-10 grid grid-cols-[24%_40%_35%] gap-10 z-10 ">
+    <div class="md:px-30 px-5 md:py-10 py-5 grid md:grid-cols-[24%_40%_35%] md:gap-10 gap-4 z-10 ">
 
       <div class="flex flex-col justify-center ">
         <div class="flex gap-1 mb-3">
-          <p class="tracking-[0.4em] text-[18px] font-[500] text-[#5B5757] uppercase">About us</p>
+          <p class="md:tracking-[0.4em] tracking-[3px] md:text-[18px] font-[500] uppercase text-[#5B5757]">About us</p>
           <div class="h-[1.5px] w-30 bg-[#5B5757] mt-3"></div>
         </div>
-        <p class="text-[45px] text-[#A18E5A] font-cormorant font-[600] leading-tight">Family-Run, Yorkshire-Born</p>
+        <p class="md:text-[45px] text-[30px] text-[#A18E5A] font-cormorant font-[600] leading-tight">Family-Run, Yorkshire-Born</p>
       </div>
 
       <div class="relative">
         <img src="assets/section6CoupleImage.png" alt="" class="h-[100%] w-[100%] object-cover rounded-xl">
-        <div class="h-[100%] w-[100%] absolute top-5 -left-5 border-2 border-[#A18E5A] z-100 rounded-xl">
+        <div class="h-[100%] w-[100%] absolute md:top-5 top-2 md:-left-5 -left-2 border-2 border-[#A18E5A] z-100 rounded-xl">
 
         </div>
       </div>
 
-      <div class="relative flex flex-col justify-center">
+      <div class="relative flex flex-col justify-center md:pt-0 pt-8">
         <!-- Left Quote -->
-        <img src="assets/quatationMarkLeft.png" alt="" class="h-7 w-7 absolute -left-5 -top-2 object-contain">
+        <img src="assets/quatationMarkLeft.png" alt="" class="h-7 w-7 absolute md:-left-5 -left-2 md:-top-2 top-2 object-contain">
 
-        <div class="text-[#000000] flex flex-col gap-3 text-[17px] font-[400] leading-relaxed tracking-[0.1em] px-5">
+        <div class="text-[#000000] flex flex-col gap-3 md:text-[17px] font-[400] md:leading-relaxed md:tracking-[0.1em] tracking-[1px] px-5">
           <p>Birdforth Hall is run by Sue and Paul, with a genuine love of rural life, the local area and bringing
             people
             together. We live onsite and are on hand when you need us, whether you would like a local recommendation,
@@ -441,19 +444,19 @@
   </section>
 
   <!-- section 7 -->
-  <section class="mt-25 mb-10">
+  <section class="md:mt-25 mt-10 mb-10">
     <div class="flex flex-col justify-center items-center">
 
-      <div class="flex gap-5 mb-5 ">
-        <div class="h-[1.5px] w-30 bg-[#5B5757] mt-3"></div>
-        <p class="tracking-[0.4em] text-[18px] font-[500] text-[#5B5757]">THE FORGE • BIRDFORTH HALL</p>
-        <div class="h-[1.5px] w-30 bg-[#5B5757] mt-3"></div>
+      <div class="flex md:gap-5 gap-2 mb-5 ">
+        <div class="h-[1.5px] md:w-30 w-5 bg-[#5B5757] mt-3"></div>
+        <p class="md:tracking-[0.4em] tracking-[3px] md:text-[18px] font-[500] text-[#5B5757]">THE FORGE • BIRDFORTH HALL</p>
+        <div class="h-[1.5px] md:w-30 w-5 bg-[#5B5757] mt-3"></div>
       </div>
-      <p class="text-[45px] text-[#A18E5A] font-cormorant font-[600] leading-tight">Find the Right Birdforth Hall Stay
+      <p class="md:text-[45px] text-[25px] text-[#A18E5A] font-cormorant font-[600] leading-tight">Find the Right Birdforth Hall Stay
       </p>
     </div>
 
-    <div class="grid grid-cols-4 mx-15 my-8 gap-4">
+    <div class="grid md:grid-cols-4 md:mx-15 mx-5 my-8 gap-4">
 
       <div class="bg-[#F7F3EA] flex flex-col gap-5 rounded-xl">
 
@@ -538,7 +541,7 @@
     </div>
 
     <!-- Mill house and the byre together card -->
-    <div class="bg-[#3F5C47] mx-15 p-5 md:p-6 rounded-2xl flex flex-col gap-5 text-[#F7F3EA] mt-6">
+    <div class="bg-[#3F5C47] md:mx-15 mx-5 p-5 md:p-6 rounded-2xl flex flex-col gap-5 text-[#F7F3EA] mt-6">
 
       <!-- Image Grid Placeholders -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
@@ -585,9 +588,9 @@
   </section>
 
   <!--FAQ section -->
-  <section id="faq-section" class="py-10 md:px-30 px-6 max-w-7xl mx-auto">
-    <div class="text-center mb-12">
-      <h2 class="text-[45px] text-[#A18E5A] font-cormorant font-[600] leading-tight">
+  <section id="faq-section" class="md:py-10 md:px-30 px-6 max-w-7xl mx-auto">
+    <div class="text-center md:mb-12 mb-4">
+      <h2 class="md:text-[45px] text-[30px] text-[#A18E5A] font-cormorant font-[600] leading-tight">
         Frequently Asked Questions
       </h2>
     </div>
@@ -611,7 +614,7 @@
       <!-- Item 2 -->
       <div class="faq-item border-b border-[#B8C5CA] pb-6 pt-5">
         <div class="faq-question flex justify-between items-center gap-4 cursor-pointer select-none">
-          <h3 class="faq-title font-cormorant font-[600] text-[28px] md:text-[32px] text-[#111111] transition-colors">
+          <h3 class="faq-title font-cormorant font-[600] md:text-[28px] text-[20px] md:text-[32px] text-[#111111] transition-colors">
             How many guests can stay at Birdforth Hall?
           </h3>
           <span class="faq-icon text-[28px] md:text-[32px] text-black font-light leading-none shrink-0">+</span>
@@ -625,7 +628,7 @@
       <!-- Item 3 -->
       <div class="faq-item border-b border-[#B8C5CA] pb-6 pt-5">
         <div class="faq-question flex justify-between items-center gap-4 cursor-pointer select-none">
-          <h3 class="faq-title font-cormorant font-[600] text-[28px] md:text-[32px] text-[#111111] transition-colors">
+          <h3 class="faq-title font-cormorant font-[600] md:text-[28px] text-[20px] md:text-[32px] text-[#111111] transition-colors">
             Does every cottage have a hot tub?
           </h3>
           <span class="faq-icon text-[28px] md:text-[32px] text-black font-light leading-none shrink-0">+</span>
@@ -638,7 +641,7 @@
       <!-- Item 4 -->
       <div class="faq-item border-b border-[#B8C5CA] pb-6 pt-5">
         <div class="faq-question flex justify-between items-center gap-4 cursor-pointer select-none">
-          <h3 class="faq-title font-cormorant font-[600] text-[28px] md:text-[32px] text-[#111111] transition-colors">
+          <h3 class="faq-title font-cormorant font-[600] md:text-[28px] text-[20px] md:text-[32px] text-[#111111] transition-colors">
             Is there a swimming pool?
           </h3>
           <span class="faq-icon text-[28px] md:text-[32px] text-black font-light leading-none shrink-0">+</span>
@@ -652,7 +655,7 @@
       <!-- Item 5 -->
       <div class="faq-item border-b border-[#B8C5CA] pb-6 pt-5">
         <div class="faq-question flex justify-between items-center gap-4 cursor-pointer select-none">
-          <h3 class="faq-title font-cormorant font-[600] text-[28px] md:text-[32px] text-[#111111] transition-colors">
+          <h3 class="faq-title font-cormorant font-[600] md:text-[28px] text-[20px] md:text-[32px] text-[#111111] transition-colors">
             Are the cottages dog friendly?
           </h3>
           <span class="faq-icon text-[28px] md:text-[32px] text-black font-light leading-none shrink-0">+</span>
@@ -666,7 +669,7 @@
       <!-- Item 6 -->
       <div class="faq-item border-b border-[#B8C5CA] pb-6 pt-5">
         <div class="faq-question flex justify-between items-center gap-4 cursor-pointer select-none">
-          <h3 class="faq-title font-cormorant font-[600] text-[28px] md:text-[32px] text-[#111111] transition-colors">
+          <h3 class="faq-title font-cormorant font-[600] md:text-[28px] text-[20px] md:text-[32px] text-[#111111] transition-colors">
             Do you accept hen or stag parties?
           </h3>
           <span class="faq-icon text-[28px] md:text-[32px] text-black font-light leading-none shrink-0">+</span>
@@ -680,7 +683,7 @@
     </div>
 
     <!-- Load More Button -->
-    <div class="flex justify-center mt-12">
+    <div class="flex justify-center md:mt-12 mt-8">
       <a href="#"
         class="bg-[#9E885B] hover:bg-[#8A754B] text-white text-[13px] font-[600] uppercase tracking-wider px-7 py-2.5 rounded transition-colors cursor-pointer shadow-sm inline-block">
         LOAD MORE
@@ -694,7 +697,7 @@
     <div
       class="bg-[linear-gradient(to_right,#F7F3EA_50%,#918F8900_90%,transparent)] flex flex-col py-15 md:px-20 px-5 gap-10 relative rounded-3xl">
       <div>
-        <img src="assets/logo.png" alt="" class="h-[80px] inline ">
+        <img src="assets/logo.png" alt="" class="md:h-[80px] h-[50px] inline ">
       </div>
 
       <div class="z-10 flex flex-col ">
@@ -703,11 +706,11 @@
 
         <div class="flex items-center gap-3">
           <a href="#"
-            class="md:py-3 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 hover:border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block uppercase rounded-lg">
+            class="md:py-3 py-2 md:px-10 px-4 md:text-[18px] text-[14px] text-[#0E0F3D] font-semibold border-2 hover:border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block uppercase rounded-lg">
             Book A Viewing
           </a>
           <a href="#"
-            class="md:py-3 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 hover:border-[#A18E5A] flex items-center gap-2 bg-[#A18E5A] hover:bg-transparent text-white hover:text-[#A18E5A] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block uppercase rounded-lg">
+            class="md:py-3 py-2 md:px-10 px-4 md:text-[18px] text-[14px] text-[#0E0F3D] font-semibold border-2 hover:border-[#A18E5A] flex items-center gap-2 bg-[#A18E5A] hover:bg-transparent text-white hover:text-[#A18E5A] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block uppercase rounded-lg">
             Book A Stay
           </a>
         </div>
@@ -751,7 +754,7 @@
         </div>
 
         <!-- Column 2: Contact Us -->
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col md:gap-4 gap-2">
           <div class="flex items-center gap-2">
             <i class="ri-map-pin-line text-[22px]"></i>
             <h3 class="text-[26px] font-cormorant font-[600]">Contact Us</h3>
@@ -783,14 +786,14 @@
             <h3 class="text-[26px] font-cormorant font-[600]">Quick Links</h3>
           </div>
 
-          <div class="grid grid-cols-[0.3fr_0.2fr]  gap-y-3 pt-1 text-[15px] text-white/95">
-            <div class="flex flex-col gap-3">
+          <div class="grid md:grid-cols-[0.3fr_0.2fr] grid-cols-2 gap-y-3 pt-1 text-[15px] text-white/95">
+            <div class="flex flex-col md:gap-3 gap-2">
               <a href="#" class="hover:underline transition-all">Our Cottages</a>
               <a href="#" class="hover:underline transition-all">Availability & Book</a>
               <a href="#" class="hover:underline transition-all">Your Stay</a>
               <a href="#" class="hover:underline transition-all">Weddings</a>
             </div>
-            <div class="flex flex-col gap-3">
+            <div class="flex flex-col md:gap-3 gap-2">
               <a href="#" class="hover:underline transition-all">Meetings and Events</a>
               <a href="#" class="hover:underline transition-all">Blog</a>
               <a href="#" class="hover:underline transition-all">Contact us</a>
