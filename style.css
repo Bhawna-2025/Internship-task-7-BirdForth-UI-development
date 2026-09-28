@@ -1,3 +1,29 @@
-body{
+body {
     font-family: "Source Sans 3", sans-serif;
+}
+
+.font-cormorant {
+    font-family: "Cormorant Garamond", serif;
+}
+
+.font-source {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* Terrace Swiper Pagination */
+.terrace-pagination .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    background-color: #D4C8B5;
+    opacity: 1;
+    margin: 0 3px !important;
+    transition: all 0.3s ease;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.terrace-pagination .swiper-pagination-bullet-active {
+    background-color: #A18E5A;
+    width: 10px;
+    height: 10px;
 }

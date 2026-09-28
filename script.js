@@ -14,10 +14,32 @@ const swiper = new Swiper(".mySwiper", {
   },
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".mySwiper .swiper-button-next",
+    prevEl: ".mySwiper .swiper-button-prev",
   },
   speed: 1000,
+});
+
+// Terrace Room Fade Swiper
+const terraceSwiper = new Swiper(".terraceSwiper", {
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+  loop: true,
+  speed: 900,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".terrace-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".terrace-button-next",
+    prevEl: ".terrace-button-prev",
+  },
 });
 
 // FAQ Accordion
@@ -33,8 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (question && answer) {
       question.addEventListener("click", () => {
         const isHidden = answer.classList.contains("hidden");
-
-        // Close all other items (optional/smooth behavior matching screenshot)
+        
         faqItems.forEach((otherItem) => {
           if (otherItem !== item) {
             const otherAnswer = otherItem.querySelector(".faq-answer");
