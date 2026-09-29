@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BirdForth</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- remix icon  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    <!-- Section 1 -->
+    <section id="nav" class="font-[600] md:mx-8 lg:mx-15 mx-5 my-3 max-w-full ">
+
+        <div class="flex justify-between items-center ">
+            <!-- left side -->
+            <div id="left" class="flex justify-center items-center md:gap-6 gap-3">
+                <!-- social-icons -->
+                <div id="social-icons" class="flex justify-center items-center gap-2">
+                    <a href="#" class="bg-[#A18E5A] h-7  w-7  rounded-full flex justify-center items-center">
+                        <img src="assets/InstaIcon.png" alt="" class="h-[60%]">
+                    </a>
+                    <a href="#" class="bg-[#A18E5A] h-7 w-7 rounded-full flex justify-center items-center">
+                        <img src="assets/FaceBookIcon.png" alt="" class="h-[50%]">
+                    </a>
+                </div>
+                <!-- telephone -->
+                <div class="flex justify-center items-center gap-2">
+                    <a href="">
+                        <img src="assets/TelephoneIcon.png" alt="" class="md:h-4 h-5">
+                    </a>
+                    <p class="font-[600] md:flex hidden">+44 (0)1845 421182</p>
+                </div>
+            </div>
+
+            <!-- right side -->
+            <div id="right" class="flex justify-center items-center gap-4">
+                <div class="md:h-12 ">
+                    <img src="assets/Googlereview.png  md:flex hidden" alt="" class="h-full">
+                </div>
+                <a href="#"
+                    class="  bg-[#3F5C47] p-2 rounded-sm text-white uppercase font-[700] text-[14px] md:inline-block hidden">
+                    Book A Viewing
+                </a>
+                <a href="#"
+                    class="bg-[#A18E5A] p-2 rounded-sm text-white uppercase font-[700] text-[14px] md:inline-block hidden">
+                    Book A Stay
+                </a>
+                <div id="lang" class="flex justify-center items-center gap-2">
+                    <div class="h-[19px] w-[19px] rounded-full overflow-hidden">
+                        <img src="assets/UkIcon.png" alt="" class="h-[100%] w-[100%] object-cover ">
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <p>English</p>
+                        <span class="h-[16px] inline-flex items-center">
+                            <img src="assets/Dropdownicon.png" alt="" class="rotate-180 h-[100%]">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- seperation -->
+        <div class="h-[1.2px] w-full bg-gray-200 mt-1"></div>
+
+        <!-- Navigation -->
+        <div class="flex justify-between items-center lg:my-6 my-4 uppercase md:mx-4">
+            <div class="md:h-15 h-10">
+                <img src="assets/Logo.png" alt="" class="h-[100%]">
+            </div>
+            <div class="lg:flex justify-center items-center gap-12 hidden">
+                <a href="#" class="flex justify-center items-center gap-1">
+                    <p>Our Cottages</p>
+                    <span class="h-[16px] inline-flex items-center">
+                        <img src="assets/Dropdownicon.png" alt="" class="rotate-180 h-[100%]">
+                    </span>
+                </a>
+                <a href="#" class="flex justify-center items-center gap-1">
+                    <p>Availability & Book</p>
+                </a>
+                <a href="#" class="flex justify-center items-center gap-1">
+                    <p>Your Stay</p>
+                    <span class="h-[16px] inline-flex items-center">
+                        <img src="assets/Dropdownicon.png" alt="" class="rotate-180 h-[100%]">
+                    </span>
+                </a>
+                <a href="#" class="flex justify-center items-center gap-1">
+                    <p>Weddings</p>
+                    <span class="h-[16px] inline-flex items-center">
+                        <img src="assets/Dropdownicon.png" alt="" class="rotate-180 h-[100%]">
+                    </span>
+                </a>
+                <a href="#" class="flex justify-center items-center gap-1">
+                    <p>Meetings and Events</p>
+                </a>
+                <a href="#" class="flex justify-center items-center gap-1">
+                    <p>Blog</p>
+                </a>
+                <a href="#" class="flex justify-center items-center gap-1">
+                    <p>Contact</p>
+                </a>
+            </div>
+            <div class="lg:hidden  block-inline">
+                <i class="ri-menu-line text-[#5B5757] mr-3 text-[18px]"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- sectin 2 -->
+
+    <section class="lg:mx-12 md:mx-8 mx-5 my-5 text-[#fff] ">
+        <div
+            class="md:h-[337px] h-[400px] lg:rounded-2xl rounded-xl overflow-hidden bg-[url('assets/third-page-banner.jpg')] bg-cover bg-center relative">
+            <div class="absolute bottom-10 md:left-13 left-5 z-10">
+                <div class="flex gap-3">
+                    <p class="font-cormorant font-[700] md:text-[35px] text-[25px]">Luxury Holiday Cottages</p>
+                </div>
+                <p class="md:font-[600] md:text-[18px] uppercase tracking-[2px]">Each property has its own personality
+                </p>
+            </div>
+            <div class="absolute h-40  w-full bottom-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        </div>
+    </section>
+
+    <!--  Luxury Holiday Cottages near York for Families and Groups-->
+    <section class="lg:mx-12 md:mx-8 mx-5 lg:my-20 my-10 text-[#5B5757]">
+        <div class="grid lg:grid-cols-2 grid-col-1 lg:gap-0 gap-5">
+
+            <!-- right grid -->
+            <div class="rounded-2xl overflow-hidden lg:h-[670px] lg:w-[650px] lg:order-1 order-2">
+                <img src="assets/gridimage5.jpg" alt="" class="rounded-2xl h-[100%] w-[100%] object-cover">
+            </div>
+
+            <!-- left grid -->
+            <div class="flex flex-col gap-5 lg:order-2 order-1">
+
+                <div class="flex md:gap-5 gap-2">
+                    <p class="md:tracking-[0.4em] tracking-[3px] md:text-[18px] font-[500] text-[#5B5757]">THE FORGE •
+                        BIRDFORTH HALL</p>
+                    <div class="h-[1.5px]  md:w-50 w-10 bg-[#5B5757] mt-3"></div>
+                </div>
+
+                <p
+                    class="lg:text-[58px] md:text-[40px] text-[25px] text-[#A18E5A] font-cormorant font-[600] leading-tight">
+                    Luxury Holiday Cottages near York for Families and Groups</p>
+
+                <div class="flex gap-2">
+                    <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
+                    <img src="assets/greyhouseicon.png" alt="" class="h-10">
+                    <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
+                </div>
+
+                <div class="text-[#000000] flex flex-col gap-3 md:text-[18px] font-[400] tracking-[5%]">
+
+                    <p>
+                        Birdforth Hall is made for the kind of break where everyone can stay together and still have
+                        room to breathe. Set in the North Yorkshire countryside between York and Thirsk, our four
+                        spacious holiday cottages combine converted-barn character with private gardens, hot tubs and
+                        shared leisure facilities.
+                    </p>
+
+                    <p>
+                        Choose one cottage for a family holiday or bring several generations and friendship groups
+                        together across the wider site. With accommodation for up to 43 guests in total, Birdforth Hall
+                        works especially well for birthdays, anniversaries, reunions, wedding stays and relaxed
+                        countryside escapes.
+                    </p>
+
+                    <p>
+
+                        Each property has its own personality, from the historic timbers of Mill House to the
+                        single-storey layout of The Stables. What they share is generous living space, well-equipped
+                        kitchens and the little extras that give a group more ways to enjoy the stay.
+                    </p>
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-5">
+                    <a href="#"
+                        class="  bg-[#3F5C47] px-3 py-2 rounded-sm text-white uppercase font-[700] text-[14px] md:inline-block hidden">
+                        Banner Code for all Cottages - Booking
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Four Characterful North Yorkshire Cottages -->
+    <section class="bg-[#F7F3EA] md:my-10 my-5 md:py-20 py-10 lg:px-30 px-5 rounded-xl overflow-hidden">
+
+        <div class="flex flex-col gap-5 justify-center items-center ">
+            <div class="flex items-center md:gap-5 gap-2">
+                <div class="h-[1px] lg:w-30 md:w-10 w-8 bg-black"></div>
+                <p
+                    class="md:tracking-[0.4em] tracking-[3px] md:text-[18px] font-[500] uppercase text-[#5B5757] uppercase">
+                    Rustic Charm</p>
+                <div class="h-[1px] lg:w-30 md:w-10 w-8 bg-black "></div>
+
+            </div>
+            <p
+                class="lg:text-[45px] md:text-[40px] text-[25px] text-[#A18E5A] font-cormorant font-[600] leading-tight text-center">
+                Four Characterful North Yorkshire Cottages
+            </p>
+        </div>
+
+        <div class="swiper mySwiper2 w-full overflow-hidden mt-10">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="grid grid-cols-2  gap-6">
+                        <div class="md:rounded-xl rounded-lg md:h-[448px] h-[200px] w-[629px] overflow-hidden">
+                            <img src="assets/crousel1.jpg" alt="" class=" h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <p class="md:text-[24px]  font-[600] tracking-[5%] leading-relaxed">The Granary: Detached,Spacious and Close to the Animals</p>
+
+                            <div class="flex items-center gap-4 text-[15px] font-[500] ">
+                                <span class="flex items-center gap-1.5"><i class="ri-user-3-fill"></i> 22</span>
+                                <span class="flex items-center gap-1.5"><i class="ri-hotel-bed-fill"></i> 9</span>
+                            </div>
+                            <p class="md:text-[18px] font-[400] tracking-[5%] leading-relaxed">Sleeping up to 9 guests
+                                in four bedrooms, The Granary sits apart from the main complex and looks across the
+                                surrounding fields. Its large dining kitchen, comfortable lounge and south-facing
+                                private garden make it a relaxed choice for families and groups who enjoy cooking and
+                                eating together. The hot tub waits just outside, while Birdforth Hall's long-horn
+                                cattle, horses and Bella the pig add to the rural view.</p>
+                            <div class="flex items-center gap-5 mt-5">
+                                <a href="#"
+                                    class="  bg-[#3F5C47] px-3 py-2 rounded-sm text-white uppercase font-[700] text-[14px] md:inline-block hidden">
+                                    Explore The Granary
+                                    <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="grid grid-cols-2  gap-6">
+                        <div class="md:rounded-xl rounded-lg md:h-[448px] h-[200px] w-[629px] overflow-hidden">
+                            <img src="assets/crousel2.jpg" alt="" class=" h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <p class="md:text-[24px]  font-[600] tracking-[5%] leading-relaxed">The Stables: Single-Storey Group Accommodation</p>
+
+                            <div class="flex items-center gap-4 text-[15px] font-[500] ">
+                                <span class="flex items-center gap-1.5"><i class="ri-user-3-fill"></i> 22</span>
+                                <span class="flex items-center gap-1.5"><i class="ri-hotel-bed-fill"></i> 9</span>
+                            </div>
+                            <p class="md:text-[18px] font-[400] tracking-[5%] leading-relaxed">The Stables sleeps up to 10 guests, or 12 including a sofa bed, across four bedrooms. Every room is on the ground floor, parking is directly beside the cottage and the large enclosed garden gives children and dogs a secure outdoor space. Vaulted ceilings and exposed beams retain the character of the original building, with a private hot tub and south-west views for long evenings outside.</p>
+                            <div class="flex items-center gap-5 mt-5">
+                                <a href="#"
+                                    class="  bg-[#3F5C47] px-3 py-2 rounded-sm text-white uppercase font-[700] text-[14px] md:inline-block hidden">
+                                    Explore The Stables
+                                    <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="grid grid-cols-2  gap-6">
+                        <div class="md:rounded-xl rounded-lg md:h-[448px] h-[200px] w-[629px] overflow-hidden">
+                            <img src="assets/gridimage5.jpg" alt="" class=" h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <p class="md:text-[24px]  font-[600] tracking-[5%] leading-relaxed">The Granary: Detached,Spacious and Close to the Animals</p>
+
+                            <div class="flex items-center gap-4 text-[15px] font-[500] ">
+                                <span class="flex items-center gap-1.5"><i class="ri-user-3-fill"></i> 22</span>
+                                <span class="flex items-center gap-1.5"><i class="ri-hotel-bed-fill"></i> 9</span>
+                            </div>
+                            <p class="md:text-[18px] font-[400] tracking-[5%] leading-relaxed">Sleeping up to 9 guests
+                                in four bedrooms, The Granary sits apart from the main complex and looks across the
+                                surrounding fields. Its large dining kitchen, comfortable lounge and south-facing
+                                private garden make it a relaxed choice for families and groups who enjoy cooking and
+                                eating together. The hot tub waits just outside, while Birdforth Hall's long-horn
+                                cattle, horses and Bella the pig add to the rural view.</p>
+                            <div class="flex items-center gap-5 mt-5">
+                                <a href="#"
+                                    class="  bg-[#3F5C47] px-3 py-2 rounded-sm text-white uppercase font-[700] text-[14px] md:inline-block hidden">
+                                    Explore The Granary
+                                    <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="grid grid-cols-2  gap-6">
+                        <div class="md:rounded-xl rounded-lg md:h-[448px] h-[200px] w-[629px] overflow-hidden">
+                            <img src="assets/crousel4.jpg" alt="" class=" h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <p class="md:text-[24px]  font-[600] tracking-[5%] leading-relaxed">The Granary: Detached,Spacious and Close to the Animals</p>
+
+                            <div class="flex items-center gap-4 text-[15px] font-[500] ">
+                                <span class="flex items-center gap-1.5"><i class="ri-user-3-fill"></i> 22</span>
+                                <span class="flex items-center gap-1.5"><i class="ri-hotel-bed-fill"></i> 9</span>
+                            </div>
+                            <p class="md:text-[18px] font-[400] tracking-[5%] leading-relaxed">Sleeping up to 9 guests
+                                in four bedrooms, The Granary sits apart from the main complex and looks across the
+                                surrounding fields. Its large dining kitchen, comfortable lounge and south-facing
+                                private garden make it a relaxed choice for families and groups who enjoy cooking and
+                                eating together. The hot tub waits just outside, while Birdforth Hall's long-horn
+                                cattle, horses and Bella the pig add to the rural view.</p>
+                            <div class="flex items-center gap-5 mt-5">
+                                <a href="#"
+                                    class="  bg-[#3F5C47] px-3 py-2 rounded-sm text-white uppercase font-[700] text-[14px] md:inline-block hidden">
+                                    Explore The Granary
+                                    <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination2 text-center mt-6"></div>
+        </div>
+
+        <div class="flex gap-2">
+            <div id="supplier-prev"
+                class="border-2 border-[#A18E5A] rounded-sm h-[40px] w-[40px] flex items-center justify-center cursor-pointer hover:bg-[#A18E5A]/10 transition-colors">
+
+                <i class="ri-arrow-left-s-line  text-[#A18E5A] text-4xl"></i>
+            </div>
+            <div id="supplier-next"
+                class="border-2 border-[#A18E5A] rounded-sm bg-[#A18E5A] h-[40px] w-[40px] flex items-center justify-center cursor-pointer hover:bg-[#A18E5A]/90 transition-colors">
+                <i class="ri-arrow-right-s-line text-white text-4xl"></i>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--   More Than a Place to Sleep -->
+    <section class="lg:mx-12 md:mx-8 mx-5 lg:my-20 my-10 text-[#5B5757]">
+        <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-10 items-center">
+            <!-- left grid (images with 519px width and 571px height) -->
+            <div
+                class="order-2 lg:order-1 relative w-full max-w-[600px] h-[420px] sm:h-[500px] md:h-[580px] lg:h-[689px] mx-auto">
+                <!-- First Image -->
+                <div
+                    class="absolute top-0 left-0 w-[82%] h-[340px] sm:h-[410px] md:h-[480px] lg:w-[519px] lg:h-[571px] rounded-xl md:rounded-2xl overflow-hidden shadow-md">
+                    <img src="assets/overlay1.jpg" alt="Birdforth Hall Cottages"
+                        class="h-full w-full object-cover rounded-xl md:rounded-2xl">
+                </div>
+                <!-- Second Image -->
+                <div
+                    class="absolute bottom-0 right-0 w-[82%] h-[340px] sm:h-[410px] md:h-[480px] lg:w-[519px] lg:h-[571px] border-4 md:border-[6px] border-white rounded-xl md:rounded-2xl shadow-xl overflow-hidden">
+                    <img src="assets/3rdPagebathTub.jpg" alt="Cottage Bath Tub"
+                        class="h-full w-full object-cover rounded-xl md:rounded-2xl">
+                </div>
+            </div>
+
+            <!-- right grid (content) -->
+            <div class="flex flex-col md:gap-5 gap-3 order-1 lg:order-2">
+                <div class="flex items-center md:gap-5 gap-2">
+                    <p class="md:tracking-[0.4em] tracking-[3px] md:text-[18px] font-[500] text-[#5B5757] uppercase">
+                        Charming Countryside Stays</p>
+                    <div class="h-[1.5px] md:w-30 w-8 bg-[#5B5757]"></div>
+                </div>
+
+                <p class="md:text-[45px] text-[30px] text-[#A18E5A] font-cormorant font-[600] leading-tight">
+                    More Than a Place to Sleep
+                </p>
+
+                <p class="text-[#000000] md:text-[18px] font-[400] tracking-[5%] leading-relaxed">
+                    A group holiday is often remembered for the time between the days out: breakfast around a big table,
+                    children heading to the pool, pizzas coming out of the oven and everyone meeting back in the hot tub
+                    as the evening settles in.
+                </p>
+
+                <p class="text-[#000000] md:text-[18px] font-semibold tracking-[5%]">
+                    At Birdforth Hall, the facilities are designed to make those moments easier. Cottage guests can
+                    enjoy:
+                </p>
+
+                <div class="flex flex-col gap-3.5 my-2">
+                    <div class="flex items-start gap-3.5">
+                        <i class="ri-checkbox-circle-line text-xl text-[#A18E5A] shrink-0 mt-0.5"></i>
+                        <p class="text-[#000000] md:text-[18px] font-[400] tracking-[5%]">A private garden and hot tub
+                            with every cottage.</p>
+                    </div>
+                    <div class="flex items-start gap-3.5">
+                        <i class="ri-checkbox-circle-line text-xl text-[#A18E5A] shrink-0 mt-0.5"></i>
+                        <p class="text-[#000000] md:text-[18px] font-[400] tracking-[5%]">Shared use of the heated
+                            indoor swimming pool on a rota basis.</p>
+                    </div>
+                    <div class="flex items-start gap-3.5">
+                        <i class="ri-checkbox-circle-line text-xl text-[#A18E5A] shrink-0 mt-0.5"></i>
+                        <p class="text-[#000000] md:text-[18px] font-[400] tracking-[5%]">A pool table and table tennis.
+                        </p>
+                    </div>
+                    <div class="flex items-start gap-3.5">
+                        <i class="ri-checkbox-circle-line text-xl text-[#A18E5A] shrink-0 mt-0.5"></i>
+                        <p class="text-[#000000] md:text-[18px] font-[400] tracking-[5%]">The DIY Pizza Shack with a
+                            wood-fired pizza oven.</p>
+                    </div>
+                    <div class="flex items-start gap-3.5">
+                        <i class="ri-checkbox-circle-line text-xl text-[#A18E5A] shrink-0 mt-0.5"></i>
+                        <p class="text-[#000000] md:text-[18px] font-[400] tracking-[5%]">Ample free parking close to
+                            the properties.</p>
+                    </div>
+                    <div class="flex items-start gap-3.5">
+                        <i class="ri-checkbox-circle-line text-xl text-[#A18E5A] shrink-0 mt-0.5"></i>
+                        <p class="text-[#000000] md:text-[18px] font-[400] tracking-[5%]">Superfast Wi-Fi in every
+                            cottage.</p>
+                    </div>
+                    <div class="flex items-start gap-3.5">
+                        <i class="ri-checkbox-circle-line text-xl text-[#A18E5A] shrink-0 mt-0.5"></i>
+                        <p class="text-[#000000] md:text-[18px] font-[400] tracking-[5%]">Travel cots, highchairs, a
+                            baby bath and changing mats when required.</p>
+                    </div>
+                    <div class="flex items-start gap-3.5">
+                        <i class="ri-checkbox-circle-line text-xl text-[#A18E5A] shrink-0 mt-0.5"></i>
+                        <p class="text-[#000000] md:text-[18px] font-[400] tracking-[5%]">Up to two well-behaved dogs in
+                            each cottage for an additional charge.</p>
+                    </div>
+                </div>
+
+                <p class="text-[#000000] md:text-[22px] font-[600] tracking-[5%] font-cormorant italic mt-2">
+                    You can plan every day or barely leave the grounds. Both approaches work here
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center flex flex-col justify-center items-center md:mt-25 mt-8 gap-5">
+            <div class="flex items-center md:gap-5 gap-2">
+                <p class="md:tracking-[0.4em] tracking-[3px] md:text-[18px] font-[500] text-[#5B5757] uppercase">THE
+                    FORGE • BIRDFORTH HALL
+                </p>
+            </div>
+            <p class="md:text-[45px] text-[25px] text-[#3F5C47] font-cormorant font-[600] leading-tight capitalize">
+                Large Group Accommodation in North Yorkshire</p>
+            <div class="flex gap-3">
+                <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
+                <img src="assets/greyhouseicon.png" alt="" class="h-10">
+                <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
+            </div>
+            <div class="text-[#000000] flex flex-col gap-3 md:text-[18px] font-[400] tracking-[5%] lg:mx-60">
+                <p>Birdforth Hall is a practical base for groups because the cottages offer a mix of shared and private
+                    space. Families can eat and relax together, while separate bedrooms, bathrooms and gardens give
+                    everyone room when they need it.</p>
+
+                <p>For a larger single group, Mill House and The Byre can be opened together to provide nine bedrooms
+                    and accommodation for up to 22 guests. For bigger gatherings, multiple cottages can be booked across
+                    the site, subject to availability and the nature of your stay.
+                </p>
+                <p>We welcome family celebrations, milestone birthdays, reunions, wedding groups and peaceful retreats.
+                    We do not accept stag or hen party bookings.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Dog-Friendly Cottages near York -->
+    <section class="lg:px-12 md:px-8 px-5 lg:py-20 py-10 bg-[#3F5C47] text-[#5B5757] relative">
+        <div class="absolute top-0 left-0">
+            <img src="assets/dogsFootprint.png" alt="">
+        </div>
+        <div class="grid lg:grid-cols-2 grid-col-1 lg:gap-20 gap-5">
+
+            <!-- left grid -->
+            <div class="flex flex-col gap-5">
+
+                <div class="flex md:gap-5 gap-2">
+                    <p class="md:tracking-[0.4em] tracking-[3px] md:text-[18px] font-[500] text-[#FFFFFF] uppercase">
+                        Yorkshire Escapes</p>
+                    <div class="h-[1.5px]  md:w-50 w-10 bg-[#FFFFFF] mt-3"></div>
+                </div>
+
+                <p
+                    class="lg:text-[58px] md:text-[40px] text-[25px] text-[#FFFFFF] font-cormorant font-[600] leading-tight">
+                    Dog-Friendly Cottages near York</p>
+
+
+
+                <div class="text-[#FFFFFF] flex flex-col gap-3 md:text-[18px] font-[400] tracking-[5%]">
+
+                    <p>
+                        Dogs are part of the family for many of our guests, so each cottage welcomes up to two
+                        well-behaved dogs for an additional charge. Every property has a private garden, and The Stables
+                        is particularly useful for dog owners thanks to its large enclosed lawn.
+                    </p>
+                    <p>
+                        The surrounding countryside offers plenty of opportunities for fresh air and local walks. Please
+                        keep dogs under control around livestock and do not leave them unattended in a cottage unless
+                        they are safely crated.
+                    </p>
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- right grid -->
+            <div class="rounded-2xl overflow-hidden lg:h-[525px] lg:w-[650px] relative">
+                <img src="assets/3rdPageDogs.jpg" alt="" class="rounded-2xl h-[100%] w-[100%]  object-cover">
+                <div class="absolute inset-0 border-[14.4px] border-[#294B394F] pointer-events-none"></div>
+                <div class="absolute top-0 left-0">
+                    <img src="assets/DogsFootprint2.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--  Explore York, Thirsk and Herriot Countrys-->
+    <section class="lg:mx-12 md:mx-8 mx-5 lg:my-20 my-10 text-[#5B5757]">
+        <div class="grid lg:grid-cols-2 grid-col-1 lg:gap-0 gap-5">
+
+            <!-- right grid -->
+            <div class="rounded-2xl overflow-hidden lg:h-[670px] lg:w-[650px] lg:order-1 order-2">
+                <img src="assets/3rdPageVillage.png" alt="" class="rounded-2xl h-[100%] w-[100%] object-cover">
+            </div>
+
+            <!-- left grid -->
+            <div class="flex flex-col gap-5 lg:order-2 order-1 py-20">
+
+                <div class="flex md:gap-5 gap-2">
+                    <p class="md:tracking-[0.4em] tracking-[3px] md:text-[18px] font-[500] text-[#5B5757] uppercase">
+                        Village Charm</p>
+                    <div class="h-[1.5px]  md:w-50 w-10 bg-[#5B5757] mt-3"></div>
+                </div>
+
+                <p
+                    class="lg:text-[58px] md:text-[40px] text-[25px] text-[#A18E5A] font-cormorant font-[600] leading-tight">
+                    Explore York, Thirsk and Herriot Country</p>
+
+                <div class="flex gap-2">
+                    <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
+                    <img src="assets/greyhouseicon.png" alt="" class="h-10">
+                    <div class="h-[1px] w-30 bg-[#948D80] mt-5"></div>
+                </div>
+
+                <div class="text-[#000000] flex flex-col gap-3 md:text-[18px] font-[400] tracking-[5%]">
+
+                    <p>
+                        Birdforth Hall is around 20 minutes north of York and within easy reach of Thirsk, Easingwold
+                        and the wider landscapes of North Yorkshire. Spend a day exploring York's historic centre,
+                        discover the market towns and villages of Herriot Country, or travel farther into the North
+                        York Moors and Yorkshire Dales.
+
+                    </p>
+
+                    <p>
+                        When you return, there is no need to organise another activity. Light the log burner, open the
+                        garden doors, book a pool session or gather everyone in the Pizza Shack for an easy evening
+                        together.
+                    </p>
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--FAQ section -->
+    <section id="faq-section" class="md:py-10 lg:px-30 md:px-10 px-6 max-w-7xl mx-auto">
+        <div class="text-center md:mb-12 mb-4">
+            <h2 class="md:text-[45px] text-[30px] text-[#A18E5A] font-cormorant font-[600] leading-tight">
+                Frequently Asked Questions
+            </h2>
+        </div>
+
+        <div class="flex flex-col text-start">
+
+            <!-- Item 1 (Open by default) -->
+            <div class="faq-item border-b border-[#B8C5CA] pb-6 pt-5">
+                <div class="faq-question flex justify-between items-center gap-4 cursor-pointer select-none">
+                    <h3
+                        class="faq-title font-cormorant font-[600] text-[28px] md:text-[32px] text-[#A18E5A] transition-colors">
+                        Where is Birdforth Hall?
+                    </h3>
+                    <span
+                        class="faq-icon text-[28px] md:text-[32px] text-black font-light leading-none shrink-0">−</span>
+                </div>
+                <div class="faq-answer pt-4 text-[#222222] text-[17px] md:text-[18px] leading-relaxed font-[400]">
+                    <p>Birdforth Hall is in Birdforth, North Yorkshire, between York and Thirsk. It is around 20 minutes
+                        north of
+                        York, outside Easingwold, with convenient access to the A19.</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="faq-item border-b border-[#B8C5CA] pb-6 pt-5">
+                <div class="faq-question flex justify-between items-center gap-4 cursor-pointer select-none">
+                    <h3
+                        class="faq-title font-cormorant font-[600] md:text-[28px] text-[20px] md:text-[32px] text-[#111111] transition-colors">
+                        How many guests can stay at Birdforth Hall?
+                    </h3>
+                    <span
+                        class="faq-icon text-[28px] md:text-[32px] text-black font-light leading-none shrink-0">+</span>
+                </div>
+                <div
+                    class="faq-answer hidden pt-4 text-[#222222] text-[17px] md:text-[18px] leading-relaxed font-[400]">
+                    <p>Across our four holiday cottages—Mill House, The Granary, The Stables, and The Byre—Birdforth
+                        Hall can
+                        accommodate up to 43 guests in total.</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="faq-item border-b border-[#B8C5CA] pb-6 pt-5">
+                <div class="faq-question flex justify-between items-center gap-4 cursor-pointer select-none">
+                    <h3
+                        class="faq-title font-cormorant font-[600] md:text-[28px] text-[20px] md:text-[32px] text-[#111111] transition-colors">
+                        Does every cottage have a hot tub?
+                    </h3>
+                    <span
+                        class="faq-icon text-[28px] md:text-[32px] text-black font-light leading-none shrink-0">+</span>
+                </div>
+                <div
+                    class="faq-answer hidden pt-4 text-[#222222] text-[17px] md:text-[18px] leading-relaxed font-[400]">
+                    <p>Yes, every cottage has its own private garden and hot tub for your exclusive use throughout your
+                        stay.</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="faq-item border-b border-[#B8C5CA] pb-6 pt-5">
+                <div class="faq-question flex justify-between items-center gap-4 cursor-pointer select-none">
+                    <h3
+                        class="faq-title font-cormorant font-[600] md:text-[28px] text-[20px] md:text-[32px] text-[#111111] transition-colors">
+                        Is there a swimming pool?
+                    </h3>
+                    <span
+                        class="faq-icon text-[28px] md:text-[32px] text-black font-light leading-none shrink-0">+</span>
+                </div>
+                <div
+                    class="faq-answer hidden pt-4 text-[#222222] text-[17px] md:text-[18px] leading-relaxed font-[400]">
+                    <p>Yes, we have a heated indoor swimming pool. Each cottage enjoys exclusive use of the pool on a
+                        scheduled
+                        rota basis.</p>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="faq-item border-b border-[#B8C5CA] pb-6 pt-5">
+                <div class="faq-question flex justify-between items-center gap-4 cursor-pointer select-none">
+                    <h3
+                        class="faq-title font-cormorant font-[600] md:text-[28px] text-[20px] md:text-[32px] text-[#111111] transition-colors">
+                        Are the cottages dog friendly?
+                    </h3>
+                    <span
+                        class="faq-icon text-[28px] md:text-[32px] text-black font-light leading-none shrink-0">+</span>
+                </div>
+                <div
+                    class="faq-answer hidden pt-4 text-[#222222] text-[17px] md:text-[18px] leading-relaxed font-[400]">
+                    <p>Yes, all our holiday cottages are dog friendly so you can bring your four-legged family members
+                        along to
+                        enjoy the North Yorkshire countryside.</p>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="faq-item border-b border-[#B8C5CA] pb-6 pt-5">
+                <div class="faq-question flex justify-between items-center gap-4 cursor-pointer select-none">
+                    <h3
+                        class="faq-title font-cormorant font-[600] md:text-[28px] text-[20px] md:text-[32px] text-[#111111] transition-colors">
+                        Do you accept hen or stag parties?
+                    </h3>
+                    <span
+                        class="faq-icon text-[28px] md:text-[32px] text-black font-light leading-none shrink-0">+</span>
+                </div>
+                <div
+                    class="faq-answer hidden pt-4 text-[#222222] text-[17px] md:text-[18px] leading-relaxed font-[400]">
+                    <p>We welcome family celebrations and respectful group gatherings. Please get in touch with us in
+                        advance to
+                        discuss the details of your stay.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Load More Button -->
+        <div class="flex justify-center md:mt-12 mt-8">
+            <a href="#"
+                class="bg-[#9E885B] hover:bg-[#8A754B] text-white text-[13px] font-[600] uppercase tracking-wider px-7 py-2.5 rounded transition-colors cursor-pointer shadow-sm inline-block">
+                LOAD MORE
+            </a>
+        </div>
+    </section>
+
+    <!-- call reservation -->
+    <section id="eight-section"
+        class="md:my-15 my-10 lg:mx-40 lg:rounded-3xl md:rounded-2xl relative  bg-[url(assets/weddingOverlay3.jpg)] bg-center ">
+        <div
+            class="bg-[linear-gradient(to_right,#F7F3EA_50%,#918F8900_90%,transparent)] flex flex-col py-15 md:px-20 px-5 gap-10 relative lg:rounded-3xl rounded-2xl">
+            <div>
+                <img src="assets/logo.png" alt="" class="md:h-[80px] h-[50px] inline ">
+            </div>
+
+            <div class="z-10 flex flex-col ">
+                <h2 class="md:text-[34px] text-[18px] font-[700] mb-5 font-cormorant capitalize">Speak to us : +44
+                    (0)1845
+                    421182</h2>
+
+                <div class="flex items-center gap-3">
+                    <a href="#"
+                        class="md:py-3 py-2 md:px-10 px-4 md:text-[18px] text-[14px] text-[#0E0F3D] font-semibold border-2 hover:border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block uppercase rounded-lg">
+                        Book A Viewing
+                    </a>
+                    <a href="#"
+                        class="md:py-3 py-2 md:px-10 px-4 md:text-[18px] text-[14px] text-[#0E0F3D] font-semibold border-2 hover:border-[#A18E5A] flex items-center gap-2 bg-[#A18E5A] hover:bg-transparent text-white hover:text-[#A18E5A] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block uppercase rounded-lg">
+                        Book A Stay
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- footer -->
+    <footer class="md:mt-10 mt-5 bg-[#3F5C47] text-white tracking-[5%]">
+        <div class="max-w-9xl mx-auto px-6 lg:px-16 pt-14 pb-6">
+
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-[0.4fr_0.3fr_0.5fr]  gap-12 md:gap-5 mb-12">
+
+                <!-- Column 1: Brand & Socials -->
+                <div class="flex flex-col gap-4">
+                    <div class="flex flex-col">
+                        <h2 class="font-cormorant text-[36px] font-[600] leading-none tracking-wide text-white">
+                            Birdforth Hall</h2>
+                        <p class="text-[12px] tracking-wider text-white/90 mt-1 font-light">Holiday Cottages & Wedding
+                            Venue</p>
+                    </div>
+
+                    <p class="text-[15px] leading-relaxed text-white/95 max-w-sm">
+                        Welcome to Birdforth Hall Holiday cottages and wedding venue, York
+                    </p>
+
+                    <div class="mt-2">
+                        <p class="font-cormorant text-[19px] font-semibold mb-3">Follow Us</p>
+                        <div class="flex gap-3 items-center">
+                            <a href="#"
+                                class="h-9 w-9 bg-white rounded-full flex items-center justify-center hover:opacity-90 transition-opacity">
+                                <i class="ri-instagram-line text-[#3F5C47] text-[20px]"></i>
+                            </a>
+                            <a href="#"
+                                class="h-9 w-9 bg-white rounded-full flex items-center justify-center hover:opacity-90 transition-opacity">
+                                <i class="ri-facebook-fill text-[#3F5C47] text-[20px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Contact Us -->
+                <div class="flex flex-col md:gap-4 gap-2">
+                    <div class="flex items-center gap-2">
+                        <i class="ri-map-pin-line text-[22px]"></i>
+                        <h3 class="text-[26px] font-cormorant font-[600]">Contact Us</h3>
+                    </div>
+
+                    <div class="flex items-center gap-2.5 text-[15px]">
+                        <i class="ri-phone-fill text-[16px]"></i>
+                        <a href="tel:+4401845421182" class="hover:underline">+44 (0)1845 421182</a>
+                    </div>
+
+                    <div class="flex items-start gap-2.5 text-[15px] text-white/95">
+                        <i class="ri-map-pin-2-line text-[18px] mt-0.5 shrink-0"></i>
+                        <p class="leading-snug">
+                            Birdforth Hall Holiday<br>
+                            Cottages, Birdforth, N.Yorks<br>
+                            YO61 4NW
+                        </p>
+                    </div>
+
+                    <div class="mt-2">
+                        <img src="assets/Googlereview.png" alt="Google and Airbnb Reviews 4.8 Rating"
+                            class="h-10 w-auto object-contain">
+                    </div>
+                </div>
+
+                <!-- Column 3: Quick Links -->
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-2">
+                        <i class="ri-links-line text-[22px]"></i>
+                        <h3 class="text-[26px] font-cormorant font-[600]">Quick Links</h3>
+                    </div>
+
+                    <div class="grid md:grid-cols-[0.3fr_0.2fr] grid-cols-2 gap-y-3 pt-1 text-[15px] text-white/95">
+                        <div class="flex flex-col md:gap-3 gap-2">
+                            <a href="#" class="hover:underline transition-all">Our Cottages</a>
+                            <a href="#" class="hover:underline transition-all">Availability & Book</a>
+                            <a href="#" class="hover:underline transition-all">Your Stay</a>
+                            <a href="#" class="hover:underline transition-all">Weddings</a>
+                        </div>
+                        <div class="flex flex-col md:gap-3 gap-2">
+                            <a href="#" class="hover:underline transition-all">Meetings and Events</a>
+                            <a href="#" class="hover:underline transition-all">Blog</a>
+                            <a href="#" class="hover:underline transition-all">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-white/20 pt-6">
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-3 text-[14px] text-white/85">
+                    <p>© Copyright 2026 Birdforth Hall Holiday Cottages</p>
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
