@@ -45,6 +45,52 @@ const swiper2 = new Swiper(".mySwiper2", {
   speed: 1000,
 });
 
+// fourth page crousel
+const thumbnails = document.querySelectorAll(".pagination-thumb");
+
+function updateActiveThumbnail(activeIndex) {
+  thumbnails.forEach((thumb, idx) => {
+    if (idx === activeIndex) {
+      thumb.classList.remove("opacity-40");
+      thumb.classList.add("opacity-100", "ring-2", "ring-[#A18E5A]");
+    } else {
+      thumb.classList.remove("opacity-100", "ring-2", "ring-[#A18E5A]");
+      thumb.classList.add("opacity-40");
+    }
+  });
+}
+
+const swiper3 = new Swiper(".mySwiper3", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+
+  navigation: {
+    nextEl: "#forth-next",
+    prevEl: "#forth-prev",
+  },
+  speed: 1000,
+  on: {
+    init: function () {
+      updateActiveThumbnail(this.realIndex);
+    },
+    slideChange: function () {
+      updateActiveThumbnail(this.realIndex);
+    },
+  },
+});
+
+thumbnails.forEach((thumbnail, idx) => {
+  thumbnail.addEventListener("click", () => {
+    swiper3.slideToLoop(idx);
+  });
+});
+
 // Terrace Room Fade Swiper
 const terraceSwiper = new Swiper(".terraceSwiper", {
   effect: "fade",
