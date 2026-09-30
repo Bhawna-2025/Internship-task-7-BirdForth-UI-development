@@ -1,3 +1,4 @@
+// first page crousel
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 20,
@@ -16,6 +17,30 @@ const swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".mySwiper .swiper-button-next",
     prevEl: ".mySwiper .swiper-button-prev",
+  },
+  speed: 1000,
+});
+
+
+// third page crousel
+const swiper2 = new Swiper(".mySwiper2", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+
+  autoplay: {
+    delay: 2000, // 2 seconds
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: "#supplier-next",
+    prevEl: "#supplier-prev",
   },
   speed: 1000,
 });

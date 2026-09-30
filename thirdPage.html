@@ -128,7 +128,6 @@
     </section>
 
     <!-- sectin 2 -->
-
     <section class="lg:mx-12 md:mx-8 mx-5 my-5 text-[#fff] ">
         <div
             class="md:h-[337px] h-[400px] lg:rounded-2xl rounded-xl overflow-hidden bg-[url('assets/third-page-banner.jpg')] bg-cover bg-center relative">
@@ -226,12 +225,13 @@
             </p>
         </div>
 
+        <!-- crousel section -->
         <div class="swiper mySwiper2 w-full overflow-hidden mt-10">
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                    <div class="grid grid-cols-2  gap-6">
-                        <div class="md:rounded-xl rounded-lg md:h-[448px] h-[200px] w-[629px] overflow-hidden">
+                    <div class="grid lg:grid-cols-2  gap-6">
+                        <div class="md:rounded-xl rounded-lg lg:h-[448px] md:h-[300px] h-[200px] lg:w-[629px] md:w-full w-[300px] overflow-hidden">
                             <img src="assets/crousel1.jpg" alt="" class=" h-full w-full object-cover">
                         </div>
                         <div class="flex flex-col gap-5">
@@ -259,8 +259,8 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="grid grid-cols-2  gap-6">
-                        <div class="md:rounded-xl rounded-lg md:h-[448px] h-[200px] w-[629px] overflow-hidden">
+                    <div class="grid lg:grid-cols-2  gap-6">
+                        <div class="md:rounded-xl rounded-lg lg:h-[448px] md:h-[300px] h-[200px] lg:w-[629px] w-full overflow-hidden">
                             <img src="assets/crousel2.jpg" alt="" class=" h-full w-full object-cover">
                         </div>
                         <div class="flex flex-col gap-5">
@@ -283,8 +283,8 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="grid grid-cols-2  gap-6">
-                        <div class="md:rounded-xl rounded-lg md:h-[448px] h-[200px] w-[629px] overflow-hidden">
+                    <div class="grid lg:grid-cols-2  gap-6">
+                        <div class="md:rounded-xl rounded-lg lg:h-[448px] md:h-[300px] h-[200px] lg:w-[629px] w-full overflow-hidden">
                             <img src="assets/gridimage5.jpg" alt="" class=" h-full w-full object-cover">
                         </div>
                         <div class="flex flex-col gap-5">
@@ -312,8 +312,8 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="grid grid-cols-2  gap-6">
-                        <div class="md:rounded-xl rounded-lg md:h-[448px] h-[200px] w-[629px] overflow-hidden">
+                    <div class="grid lg:grid-cols-2  gap-6">
+                        <div class="md:rounded-xl rounded-lg lg:h-[448px] md:h-[300px] h-[200px] lg:w-[629px] w-full overflow-hidden">
                             <img src="assets/crousel4.jpg" alt="" class=" h-full w-full object-cover">
                         </div>
                         <div class="flex flex-col gap-5">
@@ -339,27 +339,24 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="swiper-pagination2 text-center mt-6"></div>
         </div>
 
-        <div class="flex gap-2">
-            <div id="supplier-prev"
-                class="border-2 border-[#A18E5A] rounded-sm h-[40px] w-[40px] flex items-center justify-center cursor-pointer hover:bg-[#A18E5A]/10 transition-colors">
-
-                <i class="ri-arrow-left-s-line  text-[#A18E5A] text-4xl"></i>
-            </div>
-            <div id="supplier-next"
-                class="border-2 border-[#A18E5A] rounded-sm bg-[#A18E5A] h-[40px] w-[40px] flex items-center justify-center cursor-pointer hover:bg-[#A18E5A]/90 transition-colors">
-                <i class="ri-arrow-right-s-line text-white text-4xl"></i>
-
-            </div>
+        <!-- Navigation buttons in bottom-left area below carousel -->
+        <div class="flex items-center gap-3 mt-8 justify-start">
+            <button id="supplier-prev" type="button" aria-label="Previous Slide"
+                class="border-2 border-[#A18E5A] rounded-sm h-[42px] w-[42px] flex items-center justify-center cursor-pointer hover:bg-[#A18E5A]/15 active:scale-95 transition-all text-[#A18E5A]">
+                <i class="ri-arrow-left-s-line text-3xl"></i>
+            </button>
+            <button id="supplier-next" type="button" aria-label="Next Slide"
+                class="border-2 border-[#A18E5A] bg-[#A18E5A] rounded-sm h-[42px] w-[42px] flex items-center justify-center cursor-pointer hover:bg-[#8D7C4C] hover:border-[#8D7C4C] active:scale-95 transition-all text-white">
+                <i class="ri-arrow-right-s-line text-3xl"></i>
+            </button>
         </div>
 
     </section>
 
-
+    
     <!--   More Than a Place to Sleep -->
     <section class="lg:mx-12 md:mx-8 mx-5 lg:my-20 my-10 text-[#5B5757]">
         <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-10 items-center">
